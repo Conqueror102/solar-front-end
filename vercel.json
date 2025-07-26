@@ -1,8 +1,32 @@
 {
     "rewrites": [
         {
+            "source": "/products/:slug*",
+            "destination": "/products/:slug*"
+        },
+        {
+            "source": "/cart",
+            "destination": "/cart"
+        },
+        {
+            "source": "/checkout",
+            "destination": "/checkout"
+        },
+        {
+            "source": "/login",
+            "destination": "/login"
+        },
+        {
+            "source": "/register",
+            "destination": "/register"
+        },
+        {
+            "source": "/admin/:path*",
+            "destination": "/admin/:path*"
+        },
+        {
             "source": "/(.*)",
-            "destination": "/"
+            "destination": "/$1"
         }
     ]
 }
